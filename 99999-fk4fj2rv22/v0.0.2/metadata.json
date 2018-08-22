@@ -1,0 +1,22 @@
+{
+  "title": "American Society of Hematology - Thrombophilia Testing",
+  "description": "A trial recommendation knowledge object to supply evidence-based DOs and DON'Ts for physicians in practice.",
+  "arkId": "ark:/99999/fk4fj2rv22",
+  "citations": [
+    "http://www.choosingwisely.org/clinician-lists/american-society-hematology-testing-for-thrombophilia-in-adults/"
+  ],
+  "keywords": "rule set, DOs, DON'Ts, Labwise, Choosing Wisely",
+  "owners": "KGRID",
+  "contributors": "KGRID TEAM",
+  "license": {
+    "licenseName": "",
+    "licenseLink": ""
+  },
+  "url": "http://url",
+  "published": false,
+  "version": "v0.0.2",
+  "lastModified": 1529692949275,
+  "createdOn": 1529692949275,
+  "modelpath": "model",
+  "service": "model/service/servicedescriptor.yaml"
+}
