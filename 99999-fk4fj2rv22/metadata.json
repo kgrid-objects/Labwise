@@ -1,0 +1,18 @@
+{
+  "@id": "99999-fk4fj2rv22",
+  "@type": "koio:KnowledgeObject",
+  "identifier": "ark:/99999/fk4fj2rv22",
+  "title": "American Society of Hematology - Thrombophilia Testing",
+  "contributors": "KGRID TEAM",
+  "desription": "A trial recommendation knowledge object to supply evidence-based DOs and DON'Ts for physicians in practice.",
+  "citations": [
+    "http://www.choosingwisely.org/clinician-lists/american-society-hematology-testing-for-thrombophilia-in-adults/"
+  ],
+  "keywords": "rule set, DOs, DON'Ts, Labwise, Choosing Wisely",
+  "hasImplementation": [
+    "99999-fk4fj2rv22/v0.0.3"
+  ],
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}

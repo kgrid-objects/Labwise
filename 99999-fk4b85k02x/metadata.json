@@ -1,0 +1,18 @@
+{
+  "@id": "99999-fk4b85k02x",
+  "@type": "koio:KnowledgeObject",
+  "identifier": "ark:/99999/fk4b85k02x",
+  "title": "American College of Rheumatology - ANA sub-serologies Testing",
+  "contributors": "KGRID TEAM",
+  "desription": "A guideline object provides the evidence-based recommendation for Tests for anti-nuclear antibody (ANA) sub-serologies (including antibodies to double-stranded DNA, Smith, RNP, SSA, SSB, Scl-70, centromere) depending on the presence of a positive ANA and clinical suspicion of immune-mediated disease.",
+  "citations": [
+    "http://www.choosingwisely.org/clinician-lists/american-society-hematology-testing-for-thrombophilia-in-adults/"
+  ],
+  "keywords": "Labwise, Choosing Wisely, ANA, ANA sub-serologies",
+  "hasImplementation": [
+    "99999-fk4b85k02x/v0.0.3"
+  ],
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}

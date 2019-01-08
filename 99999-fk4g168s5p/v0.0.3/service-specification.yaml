@@ -1,0 +1,64 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: American Society for Clinical Pathology - Thyroid Testing
+  description: >-
+    A guideline object to provide evidence-based recommendation for Thyroid
+    Testing and additional evaluation
+servers:
+  - url: /99999/fk4g168s5p/v0.0.3
+paths:
+  /getrecommendation:
+    post:
+      description: Thyroid Testing Recommendation.
+      operationId: tsh
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/input'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/output'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    input:
+      required:
+        - labtest
+        - testresult
+      properties:
+        labtest:
+          type: string
+          example: tsh
+        testresult:
+          type: boolean
+          example: true
+    output:
+      required:
+        - result
+      properties:
+        result:
+          type: string
+          example: ' { ''tsh'':true, ''status'':''A test result was reported within six months.'', ''recs'': [ {''text'':''DO NOT order TSH Level Test.''}], ''source'':''American Society for Clinical Pathology'', ''link'':''http://www.choosingwisely.org/clinician-lists/american-society-clinical-pathology-suspected-thyroid-disease-evaluation/''}'
+    Error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string

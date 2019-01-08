@@ -1,0 +1,14 @@
+{
+  "@id": "v0.0.3",
+  "@type": "koio:Implementation",
+  "identifier": "v0.0.3",
+  "title": "American Society of Hematology - Thrombophilia Testing Implementation",
+  "description": "A trial recommendation knowledge object to supply evidence-based DOs and DON'Ts for physicians in practice.",
+  "keywords": "rule set, DOs, DON'Ts, Labwise, Choosing Wisely",
+  "hasServiceSpecification": "v0.0.3/service-specification.yaml",
+  "hasDeploymentSpecification": "v0.0.3/deployment-specification.yaml",
+  "hasPayload": "v0.0.3/getrecommendation.js",
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}

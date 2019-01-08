@@ -1,0 +1,14 @@
+{
+  "@id": "v0.0.3",
+  "@type": "koio:Implementation",
+  "identifier": "v0.0.3",
+  "title": "American Society for Clinical Pathology - Thyroid Testing Implementation",
+  "description": "A guideline object to provide evidence-based recommendation for Thyroid Testing and additional evaluation",
+  "keywords": "labwise, thyroid testing, clinical pathology, Choosing Wisely",
+  "hasServiceSpecification": "v0.0.3/service-specification.yaml",
+  "hasDeploymentSpecification": "v0.0.3/deployment-specification.yaml",
+  "hasPayload": "v0.0.3/getrecommendation.js",
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}

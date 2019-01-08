@@ -1,0 +1,68 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: American Society of Hematology - Thrombophilia Testing
+  description: >-
+    A trial recommendation knowledge object to supply evidence-based DOs and
+    DONTs for physicians in practice.
+servers:
+  - url: /99999/fk4fj2rv22/v0.0.3
+paths:
+  /getrecommendation:
+    post:
+      description: Thrombophilia Testing Recommendation.
+      operationId: vte
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/input'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/output'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    input:
+      required:
+        - labtest
+        - testresult
+      properties:
+        labtest:
+          type: string
+          example: vte
+        testresult:
+          type: boolean
+          example: true
+    output:
+      required:
+        - result
+      properties:
+        result:
+          type: string
+          example: >-
+            { 'vte':true, 'status':'Major transient risk factors are present for
+            the patient', 'recs': [ {'text':'DO NOT order Thrombophilia Level
+            Test.'}], 'source':'American Society of Hematology',
+            'link':'http://www.choosingwisely.org/clinician-lists/american-society-hematology-testing-for-thrombophilia-in-adults/'}
+    Error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string

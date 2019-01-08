@@ -1,0 +1,14 @@
+{
+  "@id": "v0.0.3",
+  "@type": "koio:Implementation",
+  "identifier": "v0.0.3",
+  "title": "American College of Rheumatology - ANA sub-serologies Testing Implementation",
+  "description": "A guideline object provides the evidence-based recommendation for Tests for anti-nuclear antibody (ANA) sub-serologies (including antibodies to double-stranded DNA, Smith, RNP, SSA, SSB, Scl-70, centromere) depending on the presence of a positive ANA and clinical suspicion of immune-mediated disease.",
+  "keywords": "Labwise, Choosing Wisely, ANA, ANA sub-serologies",
+  "hasServiceSpecification": "v0.0.3/service-specification.yaml",
+  "hasDeploymentSpecification": "v0.0.3/deployment-specification.yaml",
+  "hasPayload": "v0.0.3/getrecommendation.js",
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}
