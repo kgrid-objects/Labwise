@@ -29,7 +29,7 @@
         "mocha": "5.2.0",
         "rewire": "^4.0.1",
         "scripty": "1.7.2",
-        "vuepress": "^0.14.4"
+        "vuepress": "^1.0.3"
     },
     "scripts": {
         "test": "mocha -- ./test/**/*.test.js",
