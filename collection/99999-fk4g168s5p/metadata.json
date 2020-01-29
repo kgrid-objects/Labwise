@@ -2,6 +2,7 @@
   "@id": "99999-fk4g168s5p",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk4g168s5p",
+  "version":"v0.0.4",
   "title": "American Society for Clinical Pathology - Thyroid Testing",
   "contributors": "KGRID TEAM",
   "desription": "A guideline object to provide evidence-based recommendation for Thyroid Testing and additional evaluation",
@@ -9,9 +10,9 @@
     "http://www.choosingwisely.org/clinician-lists/american-society-clinical-pathology-suspected-thyroid-disease-evaluation/"
   ],
   "keywords": "labwise, thyroid testing, clinical pathology, Choosing Wisely",
-  "hasImplementation": [
-    "99999-fk4g168s5p/v0.0.3"
-  ],
+  "hasServiceSpecification": "service.yaml",
+  "hasDeploymentSpecification": "deployment.yaml",
+  "hasPayload": "getrecommendation.js",
   "@context": [
     "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
   ]

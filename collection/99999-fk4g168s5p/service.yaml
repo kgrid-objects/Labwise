@@ -1,17 +1,17 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: American Society of Hematology - Thrombophilia Testing
+  title: American Society for Clinical Pathology - Thyroid Testing
   description: >-
-    A trial recommendation knowledge object to supply evidence-based DOs and
-    DONTs for physicians in practice.
+    A guideline object to provide evidence-based recommendation for Thyroid
+    Testing and additional evaluation
 servers:
-  - url: /99999/fk4fj2rv22/v0.0.3
+  - url: /99999/fk4g168s5p
 paths:
   /getrecommendation:
     post:
-      description: Thrombophilia Testing Recommendation.
-      operationId: vte
+      description: Thyroid Testing Recommendation.
+      operationId: tsh
       requestBody:
         description: inputs
         required: true
@@ -41,7 +41,7 @@ components:
       properties:
         labtest:
           type: string
-          example: vte
+          example: tsh
         testresult:
           type: boolean
           example: true
@@ -51,11 +51,7 @@ components:
       properties:
         result:
           type: string
-          example: >-
-            { 'vte':true, 'status':'Major transient risk factors are present for
-            the patient', 'recs': [ {'text':'DO NOT order Thrombophilia Level
-            Test.'}], 'source':'American Society of Hematology',
-            'link':'http://www.choosingwisely.org/clinician-lists/american-society-hematology-testing-for-thrombophilia-in-adults/'}
+          example: ' { ''tsh'':true, ''status'':''A test result was reported within six months.'', ''recs'': [ {''text'':''DO NOT order TSH Level Test.''}], ''source'':''American Society for Clinical Pathology'', ''link'':''http://www.choosingwisely.org/clinician-lists/american-society-clinical-pathology-suspected-thyroid-disease-evaluation/''}'
     Error:
       required:
         - code

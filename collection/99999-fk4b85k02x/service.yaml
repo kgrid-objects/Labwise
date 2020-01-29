@@ -1,15 +1,20 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: 'American Society of Hematology - Thrombophilia Testing'
-  description: 'A trial recommendation knowledge object to supply evidence-based DOs and DONTs for physicians in practice.'
+  title: American College of Rheumatology - ANA sub-serologies Testing
+  description: >-
+    A guideline object provides the evidence-based recommendation for Tests for
+    anti-nuclear antibody (ANA) sub-serologies (including antibodies to
+    double-stranded DNA, Smith, RNP, SSA, SSB, Scl-70, centromere) depending on
+    the presence of a positive ANA and clinical suspicion of immune-mediated
+    disease.
 servers:
-  - url: '/99999/fk4fj2rv22/v0.0.2'
+  - url: /99999/fk4b85k02x
 paths:
   /getrecommendation:
     post:
-      description: Thrombophilia Testing Recommendation.
-      operationId: vte
+      description: ANA sub-serologies Testing Recommendation.
+      operationId: ana
       requestBody:
         description: inputs
         required: true
@@ -35,12 +40,16 @@ components:
     input:
       required:
         - labtest
-        - testresult
+        - anatestresult
+        - imdtestresult
       properties:
         labtest:
           type: string
-          example: 'vte'
-        testresult:
+          example: ana
+        anatestresult:
+          type: boolean
+          example: true
+        imdtestresult:
           type: boolean
           example: true
     output:
@@ -49,7 +58,11 @@ components:
       properties:
         result:
           type: string
-          example: "{ 'vte':true, 'status':'Major transient risk factors are present for the patient', 'recs': [ {'text':'DO NOT order Thrombophilia Level Test.'}], 'source':'American Society of Hematology', 'link':'http://www.choosingwisely.org/clinician-lists/american-society-hematology-testing-for-thrombophilia-in-adults/'}"
+          example: >-
+            { 'test':true, 'status':'Positive ANA and clinical suspicion of
+            immune-mediated disease', 'recs': [ ], 'source':'American College of
+            Rheumatology',
+            'link':'http://www.choosingwisely.org/clinician-lists/american-college-rheumatology-ana-sub-serologies-without-positive-ana-and-clinical-suspicion/'}
     Error:
       required:
         - code
