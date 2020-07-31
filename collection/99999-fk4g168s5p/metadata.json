@@ -2,7 +2,7 @@
   "@id": "99999-fk4g168s5p",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk4g168s5p",
-  "version":"v0.0.4",
+  "version":"v0.1.0",
   "title": "American Society for Clinical Pathology - Thyroid Testing",
   "contributors": "KGRID TEAM",
   "desription": "A guideline object to provide evidence-based recommendation for Thyroid Testing and additional evaluation",

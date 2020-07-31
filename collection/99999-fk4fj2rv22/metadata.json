@@ -2,7 +2,7 @@
   "@id": "99999-fk4fj2rv22",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/fk4fj2rv22",
-  "version":"v0.0.4",
+  "version":"v0.1.0",
   "title": "American Society of Hematology - Thrombophilia Testing",
   "contributors": "KGRID TEAM",
   "desription": "A trial recommendation knowledge object to supply evidence-based DOs and DON'Ts for physicians in practice.",
