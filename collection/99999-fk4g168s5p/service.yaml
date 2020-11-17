@@ -1,12 +1,12 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
+  version: '1.0'
   title: American Society for Clinical Pathology - Thyroid Testing
   description: >-
     A guideline object to provide evidence-based recommendation for Thyroid
     Testing and additional evaluation
 servers:
-  - url: /99999/fk4g168s5p
+  - url: /99999/fk4g168s5p/1.0
 paths:
   /getrecommendation:
     post:

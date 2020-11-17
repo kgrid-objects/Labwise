@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
+  version: '1.0'
   title: American College of Rheumatology - ANA sub-serologies Testing
   description: >-
     A guideline object provides the evidence-based recommendation for Tests for
@@ -9,7 +9,7 @@ info:
     the presence of a positive ANA and clinical suspicion of immune-mediated
     disease.
 servers:
-  - url: /99999/fk4b85k02x
+  - url: /99999/fk4b85k02x/1.0
 paths:
   /getrecommendation:
     post:

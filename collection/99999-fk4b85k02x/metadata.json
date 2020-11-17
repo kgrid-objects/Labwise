@@ -1,8 +1,8 @@
 {
-  "@id": "99999-fk4b85k02x",
+  "@id": "99999/fk4b85k02x/v1.0",
   "@type": "koio:KnowledgeObject",
-  "identifier": "ark:/99999/fk4b85k02x",
-  "version":"v0.1.0",
+  "identifier": "ark:/99999/fk4b85k02x/v1.0",
+  "version":"v1.0",
   "title": "American College of Rheumatology - ANA sub-serologies Testing",
   "contributors": "KGRID TEAM",
   "desription": "A guideline object provides the evidence-based recommendation for Tests for anti-nuclear antibody (ANA) sub-serologies (including antibodies to double-stranded DNA, Smith, RNP, SSA, SSB, Scl-70, centromere) depending on the presence of a positive ANA and clinical suspicion of immune-mediated disease.",
